@@ -1,0 +1,12 @@
+{
+  "boost_threshold": 500,
+  "hours_delay": 24,
+  "two_captcha_key": "YOUR_2CAPTCHA_API_KEY_HERE",
+  "telegram": {
+    "bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "chat_id": "YOUR_CHAT_ID"
+  },
+  "database": {
+    "filename": "sent_tokens.db"
+  }
+}

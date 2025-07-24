@@ -1,0 +1,38 @@
+# Sensitive files
+config.json
+cookies.json
+user_agent.txt
+browser_state.json
+*.db
+
+# Browser data
+browser_data/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Screenshots and debug files
+*.png
+*.jpg
+*.jpeg
+example.html
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Virtual environment
+venv/
+env/
+.env
