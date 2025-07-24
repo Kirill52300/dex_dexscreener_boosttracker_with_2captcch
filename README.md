@@ -71,6 +71,7 @@ python main.py
 ### Automated Scheduling (Recommended)
 
 **I personally use crontab for scheduling:**
+Xvfb for run in virtual display.
 
 ```bash
 # Edit crontab
@@ -80,7 +81,7 @@ crontab -e
 */30 * * * * cd /path/to/dexboost && /usr/bin/python3 main.py >> logs/dexboost.log 2>&1
 
 # Or every hour
-0 * * * * cd /path/to/dexboost && /usr/bin/python3 main.py >> logs/dexboost.log 2>&1
+0 * * * * cd /path/to/dexboost && xvfb-run /usr/bin/python3 main.py >> logs/dexboost.log 2>&1
 ```
 
 ### Headless Mode
@@ -96,7 +97,7 @@ context = p.chromium.launch_persistent_context(
 )
 ```
 
-**Note:** Headless mode works well when proper cookies and user-agent are configured.
+**Note:** Headless mode works well when proper cookies and user-agent are configured. 
 
 ## How It Works
 
